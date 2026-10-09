@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFG桩施工质量智能监控系统 — 岩土工程智能建造平台</title>
+<meta name="description" content="面向CFG桩复合地基施工质量的智能监控桌面软件：基于大模型与本地规范知识库的技术问答、文件审核，以及桩位总平面图、实时状态监控、风险预警与资料归档九大模块。">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="15" y="14" width="7" height="36" rx="2" fill="#fff"/>
+          <rect x="29" y="20" width="7" height="30" rx="2" fill="#cfe6ff"/>
+          <rect x="43" y="14" width="7" height="36" rx="2" fill="#fff"/>
+          <rect x="10" y="48" width="44" height="5" rx="2.5" fill="#8ecbff"/>
+        </svg>
+      </span>
+      <span class="brand-text">CFG桩施工质量智能监控系统</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">功能特性</a>
+      <a href="#showcase">界面展示</a>
+      <a href="#tech">技术架构</a>
+      <a href="#download" class="btn btn-primary btn-sm">立即下载</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== 首屏 ========== -->
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+  <div class="container hero-inner">
+    <div class="hero-badge reveal">V1.0 · Windows 桌面版 · 陕西铁道工程勘察有限公司</div>
+    <h1 class="hero-title reveal delay-1">
+      CFG桩施工质量<br>
+      <span class="grad-text">智能监控与AI复核</span>平台
+    </h1>
+    <p class="hero-sub reveal delay-2">
+      融合大语言模型与本地规范知识库（RAG），覆盖知识问答、文件审核、桩位成图、<br>
+      实时监控、风险预警、资料归档的全过程质量管理工具
+    </p>
+    <div class="hero-actions reveal delay-3">
+      <!-- ===== 下载链接：发布时替换为你的 GitHub Release 地址 ===== -->
+      <a class="btn btn-primary btn-lg" id="btnDownloadHero"
+         href="https://github.com/USERNAME/REPO/releases" target="_blank" rel="noopener">
+        下载 Windows 版
+      </a>
+      <a class="btn btn-ghost btn-lg" href="#features">查看功能</a>
+    </div>
+    <div class="hero-stats reveal delay-4">
+      <div class="stat"><b>9</b><span>大功能模块</span></div>
+      <div class="stat"><b>6</b><span>方协同文件管理</span></div>
+      <div class="stat"><b>29</b><span>项资料归档清单</span></div>
+      <div class="stat"><b>5</b><span>套界面主题</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint" aria-hidden="true"><span></span>向下滚动浏览</div>
+</section>
+
+<!-- ========== 功能特性 ========== -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">FEATURES</span>
+      <h2>九大模块，贯通施工质量管控全流程</h2>
+      <p>从规范知识检索到竣工资料归档，一个桌面软件完成</p>
+    </div>
+    <div class="feature-grid">
+      <div class="f-card reveal">
+        <div class="f-icon i-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5a2 2 0 0 1 2-2h6v18H6a2 2 0 0 1-2-2V5Z"/><path d="M20 5a2 2 0 0 0-2-2h-6v18h6a2 2 0 0 0 2-2V5Z"/><path d="M8 7h2M8 10h2M14 7h2M14 10h2"/></svg>
+        </div>
+        <h3>知识底座</h3>
+        <p>规范标准（PDF）与项目案例（Word）自动解析切块、向量化入库，构建本地专业知识库。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-cyan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-3.8-.9L3 21l1.9-4.1A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
+        </div>
+        <h3>技术问答</h3>
+        <p>基于知识库回答岩土专业问题，答案逐条标注规范名称与条款号，可溯源、不臆造。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>
+        </div>
+        <h3>文件管理</h3>
+        <p>建设、勘察、设计、施工、监理、检测六阶段分类，支持批量上传与系统默认程序打开。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-violet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6M11 8v6"/></svg>
+        </div>
+        <h3>文件审核</h3>
+        <p>逐段对照规范条文判定合规性，按勘察规范核查必备章节完整性，意见可导出 Word 报告。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 4 3 7v13l6-3 6 3 6-3V4l-6 3-6-3Z"/><path d="M9 4v13M15 7v13"/></svg>
+        </div>
+        <h3>总平面图</h3>
+        <p>CSV 批量导入桩位坐标自动成图，滚轮缩放、拖拽平移，风险等级颜色联动标注。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-red">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v10"/><path d="M5.5 6.5a8 8 0 1 0 13 0"/><circle cx="12" cy="15" r="1.4" fill="currentColor"/></svg>
+        </div>
+        <h3>实时状态</h3>
+        <p>钻进速度、电流、流量等参数仪表盘同屏展示，长螺旋钻具深度标尺随进尺实时伸缩。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/><path d="M13 13h4M13 17h4"/></svg>
+        </div>
+        <h3>单桩数据</h3>
+        <p>27 项固定表头批量导入施工记录，按日期与设备筛选，环形进度对比设计总量。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v5M12 18h.01"/></svg>
+        </div>
+        <h3>风险预警</h3>
+        <p>对桩位偏差、垂直度、桩长、充盈系数、电流分级预警，评级结果联动总平面图。</p>
+      </div>
+      <div class="f-card reveal">
+        <div class="f-icon i-teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/><path d="M7 6h.01M7 12h.01M7 18h.01"/></svg>
+        </div>
+        <h3>资料归档</h3>
+        <p>依技术规程生成 29 项归档清单，自动匹配已有文件、标注缺失项，支持「不涉及」与恢复。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 滚动展示（核心） ========== -->
+<section class="showcase" id="showcase">
+  <div class="container">
+    <div class="sec-head light reveal">
+      <span class="sec-tag">SCREENSHOTS</span>
+      <h2>滚动浏览软件界面</h2>
+      <p>持续向下滚动，逐一查看九大模块的实际运行界面</p>
+    </div>
+  </div>
+
+  <!-- 每个 slide：左文字 + 右截图（交替方向） -->
+  <div class="container slides">
+
+    <div class="reveal" id="s1">
+      <div class="slide-text">
+        <span class="slide-no">01</span>
+        <h3>知识底座</h3>
+        <p class="slide-desc">规范标准、项目案例统一入库的智能基础，供问答与审核检索引用。</p>
+        <ul class="slide-points">
+          <li>支持 PDF / Word 文档解析，自动切块向量化</li>
+          <li>逐文件显示「已入库 N 块 / 未入库」状态</li>
+          <li>向量数据本地存储，知识库不出本机</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>知识底座</span></div>
+          <img src="images/knowledge-base.png" alt="知识底座界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reverse reveal" id="s2">
+      <div class="slide-text">
+        <span class="slide-no">02</span>
+        <h3>技术问答</h3>
+        <p class="slide-desc">基于规范条文回答 CFG 桩专业问题，每条答案附引用出处。</p>
+        <ul class="slide-points">
+          <li>大模型 + RAG 检索增强生成，答案标注 [n] 编号</li>
+          <li>右侧引用卡片列出规范名称、条款号与原文</li>
+          <li>问答历史持久化保存，重启软件自动恢复</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>技术问答</span></div>
+          <img src="images/qa.png" alt="技术问答界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" id="s3">
+      <div class="slide-text">
+        <span class="slide-no">03</span>
+        <h3>文件管理</h3>
+        <p class="slide-desc">按工程阶段分类的项目文件中心，六方协同、条理清晰。</p>
+        <ul class="slide-points">
+          <li>建设 / 勘察 / 设计 / 施工 / 监理 / 检测六阶段彩色标签</li>
+          <li>支持子文件夹导航、批量上传与系统默认程序打开</li>
+          <li>同名文件自动加时间戳后缀，杜绝误覆盖</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>文件管理</span></div>
+          <img src="images/files.png" alt="文件管理界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reverse reveal" id="s4">
+      <div class="slide-text">
+        <span class="slide-no">04</span>
+        <h3>文件审核</h3>
+        <p class="slide-desc">合规性与完整性双重把关，审核意见清单一目了然。</p>
+        <ul class="slide-points">
+          <li>逐段对照规范条文，判定符合 / 需补充 / 缺失</li>
+          <li>依据勘察规范 9 项必备章节自动核查完整性</li>
+          <li>审核结果一键导出 Word 报告</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>文件审核</span></div>
+          <img src="images/review.png" alt="文件审核界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" id="s5">
+      <div class="slide-text">
+        <span class="slide-no">05</span>
+        <h3>总平面图</h3>
+        <p class="slide-desc">数百根桩位坐标一图掌握，支持缩放平移与风险联动着色。</p>
+        <ul class="slide-points">
+          <li>CSV 批量导入桩编号与 X / Y 坐标自动成图</li>
+          <li>滚轮缩放、拖拽平移、自适应网格与比例尺</li>
+          <li>桩点按预警等级着色，支持导出图片</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>总平面图</span></div>
+          <img src="images/pile-plan.png" alt="总平面图界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reverse reveal" id="s6">
+      <div class="slide-text">
+        <span class="slide-no">06</span>
+        <h3>实时状态</h3>
+        <p class="slide-desc">仪表盘与深度剖面直观还原长螺旋 CFG 桩成孔施工监控。</p>
+        <ul class="slide-points">
+          <li>下钻速度、提钻速度、实时电流三组仪表盘同屏</li>
+          <li>长螺旋钻具从地面起延伸，随实际深度自适应伸缩</li>
+          <li>导入桩机监控 Excel 即还原单桩施工全过程参数</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>实时状态</span></div>
+          <img src="images/realtime.png" alt="实时状态界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" id="s7">
+      <div class="slide-text">
+        <span class="slide-no">07</span>
+        <h3>单桩数据</h3>
+        <p class="slide-desc">27 项施工参数精细管理，进度统计对比设计总量。</p>
+        <ul class="slide-points">
+          <li>Excel 第二列批量导入每根桩的施工记录</li>
+          <li>按施工日期、桩机编号多维筛选</li>
+          <li>环形进度图实时对比桩数、桩长设计总量</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>单桩数据</span></div>
+          <img src="images/pile-data.png" alt="单桩数据界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reverse reveal" id="s8">
+      <div class="slide-text">
+        <span class="slide-no">08</span>
+        <h3>风险预警</h3>
+        <p class="slide-desc">关键指标逐项评估、分级预警，质量风险早发现。</p>
+        <ul class="slide-points">
+          <li>桩位偏差、垂直度、桩长、充盈系数、电流五项评估</li>
+          <li>单桩风险量化偏差度，给出综合评级</li>
+          <li>风险等级占比饼图，评级同步着色总平面图</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>风险预警</span></div>
+          <img src="images/risk.png" alt="风险预警界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" id="s9">
+      <div class="slide-text">
+        <span class="slide-no">09</span>
+        <h3>资料归档</h3>
+        <p class="slide-desc">按技术规程归档清单自动匹配文件，竣工资料闭环管理。</p>
+        <ul class="slide-points">
+          <li>六大类 29 项归档资料，两列卡片布局进度可视</li>
+          <li>绿底「已有」/ 红底「缺失」标签，关键词+手动双重匹配</li>
+          <li>支持「不涉及」标记与恢复，内置 PDF/图片预览</li>
+        </ul>
+      </div>
+      <div class="slide-shot">
+        <div class="window-frame">
+          <div class="wf-bar"><i></i><i></i><i></i><span>资料归档</span></div>
+          <img src="images/archive.png" alt="资料归档界面" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== 技术架构 ========== -->
+<section class="section" id="tech">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">TECHNOLOGY</span>
+      <h2>轻量、可靠、面向工程现场的技术选型</h2>
+      <p>云端大模型负责推理，工程数据全部本地处理</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item reveal"><b>Python 3.14</b><span>主开发语言</span></div>
+      <div class="tech-item reveal"><b>PySide6 / Qt</b><span>跨平台桌面界面</span></div>
+      <div class="tech-item reveal"><b>GLM-4.5-air</b><span>智谱云端对话大模型</span></div>
+      <div class="tech-item reveal"><b>Qwen3-Embedding</b><span>文本向量化模型</span></div>
+      <div class="tech-item reveal"><b>RAG 检索增强</b><span>向量召回 + BM25 重排</span></div>
+      <div class="tech-item reveal"><b>NumPy + JSON</b><span>轻量本地向量库</span></div>
+      <div class="tech-item reveal"><b>PyMuPDF / python-docx</b><span>PDF 与 Word 解析</span></div>
+      <div class="tech-item reveal"><b>PyInstaller</b><span>绿色免安装打包</span></div>
+    </div>
+    <div class="tech-flow reveal">
+      <div class="tf-node">文档解析<br><small>PDF / Word</small></div>
+      <div class="tf-arrow">→</div>
+      <div class="tf-node">切块与向量化<br><small>章节 / 条款号 / 页码</small></div>
+      <div class="tf-arrow">→</div>
+      <div class="tf-node">混合检索<br><small>向量 + BM25</small></div>
+      <div class="tf-arrow">→</div>
+      <div class="tf-node">大模型生成<br><small>答案附条文出处</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 下载 ========== -->
+<section class="download" id="download">
+  <div class="container">
+    <div class="dl-card reveal">
+      <h2>开始使用 CFG桩施工质量智能监控系统</h2>
+      <p>绿色免安装，解压即可运行；内置详细使用手册（docx）</p>
+      <!-- ===== 下载链接：发布时替换为你的 GitHub Release 直链 ===== -->
+      <a class="btn btn-light btn-lg" id="btnDownloadFooter"
+         href="https://github.com/USERNAME/REPO/releases" target="_blank" rel="noopener">
+        从 GitHub Releases 下载
+      </a>
+      <ol class="dl-steps">
+        <li><b>1</b> 下载压缩包（Windows 10 / 11，64 位）</li>
+        <li><b>2</b> 解压到任意目录</li>
+        <li><b>3</b> 双击 <code>CFGPileManage.exe</code> 运行</li>
+        <li><b>4</b> 首次使用按手册在 <code>.env</code> 中填入大模型 API Key</li>
+      </ol>
+      <p class="dl-note">知识库文档与项目数据均保存在程序目录的 <code>data/</code> 文件夹，离线可用、数据不出本机。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 页脚 ========== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand-text light">CFG桩施工质量智能监控系统 V1.0</div>
+      <p>面向岩土工程勘察设计的 AI 辅助质量复核工具</p>
+    </div>
+    <div class="footer-links">
+      <a href="#features">功能特性</a>
+      <a href="#showcase">界面展示</a>
+      <a href="#tech">技术架构</a>
+      <a href="#download">下载</a>
+    </div>
+  </div>
+  <div class="container copyright">
+    Copyright © 2026 陕西铁道工程勘察有限公司. 保留所有权利。本软件仅用于 CFG 桩文件智能复核，未经授权不得复制或传播。
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+
